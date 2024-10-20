@@ -1,1 +1,48 @@
-/* ini CSS */ 
+/* ini C SS */
+ .main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+.logo-icon {
+    height: 50px;
+    width: 50px;
+    background-image: url(https://picsum.photos/100);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+ }   
+
+
+    nav {
+        display:flex;
+    } 
+
+    nav>a {
+        border: 1px;
+        padding: 8px;
+        text-decoration: none;
+        color: black; 
+    }
+
+    .Photo-Banner {
+        border: 1px solid;
+        height: 300px;
+        background-image: url(https://picsum.photos/200);
+        background-size: cover;
+        background-position: top;
+    }
+
+    .article{
+        height:300px;
+    }
+
+    .massage.container {
+        display : flex;
+    }
+    footer>div {
+        text-align: center;
+        font-family: cursive;
+        font-size: small;
+    }
