@@ -31,7 +31,7 @@
                 <h1>Hi Dear, Welcome To My Website</h1>
             </header>
             <article>
-                <p>Lorem Picsum Dolor Sit Amet Adipicsing</p>
+                <p>Ini Adalah Latihan Website Pertama saya</p>
 
                 <!--Photo Banner-->
                 <div class="Photo-Banner"></div>
@@ -66,23 +66,65 @@
 
         <!--section Massage Us-->
         <section id="section-massage-us">
-            <header>
-                <h1>Massage Us</h1>
-            </header>
-            <div class="massage-container">
-                <form></form>
+        <h1 class="title">Massage Us</h1>
+            <p class="subtitle">
+            Silahkan Memasukkan Data 
+            </p>
+            <div class="Massage-container">
+            <div class="form-container">
+            <form id="messageForm">
+                <table>
+                <tr>
+                    <td><strong>Nama</strong></td>
+                    <td>
+                        <strong>:</strong><input type="text" name="name" id="name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Tanggal Lahir</strong></td>
+                    <td>
+                        <strong>:</strong><input type="date" name="dob" id="dob" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Jenis Kelamin</strong></td>
+                    <td>
+                        <strong>:</strong>
+                        <input type="radio" name="gender" id="laki-laki" value="Laki-laki" required>
+                        <label for="laki-laki">Laki-laki</label>
+                        <input type="radio" name="gender" id="perempuan" value="Perempuan" required>
+                        <label for="perempuan">Perempuan</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td><strong>Pesan</strong></td>
+                    <td id="textarea">
+                        <strong>:</strong><textarea name="message" id="message" cols="30" rows="10" required></textarea>
+                    </td>
+                </tr>
+                </table>
+                <button type="submit">Submit</button>
+            </form>
+                </div>
+                    <div class="output-container">
+                        <h3>Output</h3>
+                            <div class="output">
+                                <p>Current Time : <span id="currentTime"></span></p>
+                                <p>Nama : <span id="outputName"></span></p>
+                                <p>Tanggal Lahir : <span id="outputDob"></span></p>
+                                <p>Jenis Kelamin : <span id="outputGender"></span></p>
+                                <p>Pesan : <span id="outputMessage"></span></p>
+                            </div>
+                    </div>
+                </div>
+        </section>
+        
+            <footer>
+                <p>&copy; 2024 Revou Mini Project Software Engineer - Muhammad Ichsan</p>
+            </footer>
 
-                <div></div>
-            </div>
-        </section>    
-    </main>
-
-    <hr />
-    
-    <!-- Copyright -->
-    <footer>
-        <div>Made By MuhammadIchsan@id</div>
-    </footer>
-
+        <!-- import js -->
+        <script src="js/script.js"></script>
 </body>
+
 </html>
